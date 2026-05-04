@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Duvan Sneyder Perilla Gutiérrez · Fraud Data Analyst</title>
+<meta name="description" content="Portafolio de Duvan Sneyder Perilla Gutiérrez · Fraud Data Analyst con 4+ años en Digital Platforms Colombia. +$18M COP en pérdidas prevenidas, reducción de fraude del 87-95% y 160+ horas/mes automatizadas." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f4f3ee;
+  --bg-card: #ffffff;
+  --ink: #0e1b2c;
+  --ink-soft: #2a3a52;
+  --ink-muted: #5b6878;
+  --rule: #d7d3c8;
+  --accent: #1a3a6c;
+  --accent-bright: #2d5aa0;
+  --warn: #b85c38;
+  --good: #2e6b4a;
+  --grid: #e8e5da;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: -1px -1px;
+}
+
+::selection { background: var(--accent); color: var(--bg); }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ============ TOP BAR ============ */
+.topbar {
+  border-bottom: 1px solid var(--rule);
+  background: rgba(244, 243, 238, 0.9);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  font-size: 13px;
+}
+.topbar-mark {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--ink);
+}
+.topbar-nav {
+  display: flex;
+  gap: 28px;
+  text-transform: uppercase;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+.topbar-nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s;
+}
+.topbar-nav a:hover { color: var(--accent); }
+.topbar-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+.topbar-nav a:hover::after { width: 100%; }
+
+@media (max-width: 720px) {
+  .topbar-nav { display: none; }
+}
+
+/* ============ HERO ============ */
+.hero {
+  padding: 96px 0 80px;
+  position: relative;
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-muted);
+  margin-bottom: 28px;
+}
+.hero-meta::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--ink-muted);
+}
+
+.hero h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(48px, 7vw, 92px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 36px;
+  font-variation-settings: "opsz" 144;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+}
+
+.hero-sub {
+  font-size: 19px;
+  color: var(--ink-soft);
+  max-width: 720px;
+  line-height: 1.55;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+.hero-sub strong { color: var(--ink); font-weight: 600; }
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 56px;
+}
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  padding: 7px 14px;
+  border: 1px solid var(--rule);
+  background: var(--bg-card);
+  color: var(--ink-soft);
+  border-radius: 100px;
+}
+
+.hero-contact {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--ink-soft);
+  padding-top: 32px;
+  border-top: 1px solid var(--rule);
+}
+.hero-contact a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink-muted);
+  padding-bottom: 2px;
+  transition: all 0.2s;
+}
+.hero-contact a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.hero-contact-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ============ METRICS BAR ============ */
+.metrics {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: var(--ink);
+  color: var(--bg);
+  padding: 56px 0;
+  position: relative;
+}
+.metrics::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+}
+.metrics-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 36px;
+  position: relative;
+}
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+@media (max-width: 800px) { .metrics-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.metric {
+  padding: 4px 24px 0 0;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  padding-left: 24px;
+}
+.metric:first-child { border-left: 0; padding-left: 0; }
+@media (max-width: 800px) {
+  .metric { margin-bottom: 32px; padding-left: 16px; }
+  .metric:nth-child(odd) { border-left: 0; padding-left: 0; }
+}
+.metric-value {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--bg);
+  margin-bottom: 12px;
+}
+.metric-value em {
+  font-style: italic;
+  color: #a8c5e5;
+  font-weight: 300;
+}
+.metric-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.4;
+}
+
+/* ============ SECTION HEADERS ============ */
+section { padding: 80px 0; border-top: 1px solid var(--rule); }
+section.metrics { padding: 56px 0; }
+
+.section-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-label::before {
+  content: '§';
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.section-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(36px, 4.5vw, 56px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin-bottom: 56px;
+  max-width: 800px;
+}
+.section-title em { font-style: italic; color: var(--accent); }
+
+/* ============ ABOUT ============ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+.about-aside {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--ink-muted);
+  line-height: 1.8;
+  position: sticky;
+  top: 100px;
+}
+.about-aside-row {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.about-aside-row:last-child { border-bottom: 0; }
+.about-aside-label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 10px;
+  color: var(--ink-muted);
+}
+.about-aside-value {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.about-body p {
+  font-size: 17px;
+  margin-bottom: 22px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+.about-body p:first-child::first-letter {
+  font-family: 'Fraunces', serif;
+  font-size: 64px;
+  font-weight: 400;
+  float: left;
+  line-height: 0.9;
+  margin: 6px 12px 0 0;
+  color: var(--accent);
+}
+.about-body strong { color: var(--ink); font-weight: 600; }
+
+/* ============ STACK ============ */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0;
+  border: 1px solid var(--rule);
+  background: var(--bg-card);
+}
+.stack-cell {
+  padding: 28px 28px 32px;
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.stack-cell:last-child { border-right: 0; }
+
+.stack-cell-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+.stack-cell-title {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+.stack-cell-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.stack-cell-list li {
+  font-size: 14px;
+  color: var(--ink-soft);
+  padding-left: 16px;
+  position: relative;
+}
+.stack-cell-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* ============ PROJECTS ============ */
+.project {
+  display: grid;
+  grid-template-columns: 110px 1fr 320px;
+  gap: 40px;
+  padding: 48px 0;
+  border-top: 1px solid var(--rule);
+  align-items: start;
+}
+.project:last-child { border-bottom: 1px solid var(--rule); }
+@media (max-width: 900px) {
+  .project { grid-template-columns: 1fr; gap: 16px; padding: 36px 0; }
+}
+
+.project-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--ink-muted);
+  letter-spacing: 0.1em;
+}
+.project-num span {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  color: var(--ink);
+  font-weight: 400;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.project-body { padding-right: 20px; }
+@media (max-width: 900px) { .project-body { padding-right: 0; } }
+
+.project-status {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 4px 10px;
+  margin-bottom: 14px;
+  border-radius: 100px;
+}
+.status-prod { background: rgba(46, 107, 74, 0.1); color: var(--good); border: 1px solid rgba(46, 107, 74, 0.25); }
+.status-private { background: rgba(184, 92, 56, 0.1); color: var(--warn); border: 1px solid rgba(184, 92, 56, 0.25); }
+.status-public { background: rgba(26, 58, 108, 0.08); color: var(--accent); border: 1px solid rgba(26, 58, 108, 0.2); }
+
+.project-title {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+.project-title em { font-style: italic; color: var(--accent); font-weight: 400; }
+
+.project-desc {
+  font-size: 15.5px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+.project-desc strong { color: var(--ink); font-weight: 600; }
+
+.project-impact {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent);
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+.project-impact-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.project-tech {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--ink-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--rule);
+  padding: 18px 20px;
+  line-height: 1.8;
+}
+.project-tech-label {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-muted);
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.project-tech-value {
+  color: var(--ink);
+  font-size: 12.5px;
+}
+
+/* ============ CODE ============ */
+.code-block {
+  background: var(--ink);
+  color: #e8e5da;
+  padding: 28px 32px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  border-radius: 2px;
+  overflow-x: auto;
+  position: relative;
+  margin-bottom: 32px;
+  white-space: pre;
+  tab-size: 2;
+}
+.code-block::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(232, 229, 218, 0.4);
+}
+.code-comment { color: #7a8aa3; font-style: italic; }
+.code-keyword { color: #c8b6e0; }
+.code-string { color: #d4b483; }
+.code-fn { color: #8ec5d0; }
+
+.samples-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 800px) { .samples-grid { grid-template-columns: 1fr; } }
+
+.sample-caption {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
+  margin-bottom: 12px;
+}
+.sample-title {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.sample-blurb {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+}
+
+/* ============ CTA / FOOTER ============ */
+.cta {
+  padding: 120px 0;
+  text-align: left;
+  border-top: 1px solid var(--rule);
+}
+.cta h2 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(40px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  max-width: 900px;
+}
+.cta h2 em { font-style: italic; color: var(--accent); }
+.cta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+}
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: var(--ink);
+  color: var(--bg);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: all 0.25s;
+  border: 1px solid var(--ink);
+}
+.cta-link:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.cta-link.outline {
+  background: transparent;
+  color: var(--ink);
+}
+.cta-link.outline:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.cta-link-arrow {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--rule);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* ============ ANIMATIONS ============ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero > * { animation: fadeUp 0.7s ease-out backwards; }
+.hero-meta { animation-delay: 0.05s; }
+.hero h1 { animation-delay: 0.15s; }
+.hero-sub { animation-delay: 0.3s; }
+.hero-tags { animation-delay: 0.4s; }
+.hero-contact { animation-delay: 0.5s; }
+
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <span class="topbar-mark">D · Perilla</span>
+    <nav class="topbar-nav">
+      <a href="#metrics">Resultados</a>
+      <a href="#about">Perfil</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#code">Código</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" style="border-top: none;">
+  <div class="container">
+    <div class="hero-meta">Portafolio · 2026 · Bogotá, Colombia</div>
+    <h1>
+      Detecto fraude<br>
+      antes de que <em>cueste.</em>
+    </h1>
+    <p class="hero-sub">
+      Soy <strong>Duvan Sneyder Perilla Gutiérrez</strong>, Fraud Data Analyst con
+      <strong>4+ años</strong> en Digital Platforms Colombia. Diseño sistemas antifraude que monitorean
+      <strong>180K+ transacciones/mes</strong>, automatizan <strong>160+ horas/mes</strong> de trabajo
+      manual y han prevenido <strong>+$18M COP</strong> en pérdidas.
+    </p>
+    <div class="hero-tags">
+      <span class="tag">SQL · ClickHouse · BigQuery · Snowflake</span>
+      <span class="tag">Python · pandas · Flask</span>
+      <span class="tag">Power BI</span>
+      <span class="tag">DeepFace · DBSCAN</span>
+      <span class="tag">Llama 3.1 · Ollama</span>
+      <span class="tag">Render · Vercel</span>
+    </div>
+    <div class="hero-contact">
+      <div>
+        <span class="hero-contact-label">Correo</span>
+        <a href="mailto:duvanesneider11@gmail.com">duvanesneider11@gmail.com</a>
+      </div>
+      <div>
+        <span class="hero-contact-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/duvan-sneyder-perilla-gutierrez-11113b1a1/" target="_blank" rel="noopener">duvan-sneyder-perilla</a>
+      </div>
+      <div>
+        <span class="hero-contact-label">GitHub</span>
+        <a href="https://github.com/DuvanP11" target="_blank" rel="noopener">@DuvanP11</a>
+      </div>
+      <div>
+        <span class="hero-contact-label">Teléfono</span>
+        <a href="tel:+573022359629">+57 302 235 9629</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METRICS ============ -->
+<section id="metrics" class="metrics">
+  <div class="container">
+    <div class="metrics-label">— Resultados con números</div>
+    <div class="metrics-grid">
+
+      <div class="metric">
+        <div class="metric-value">+<em>$18M</em><span style="font-size:0.55em; color:rgba(255,255,255,0.6);"> COP</span></div>
+        <div class="metric-label">en pérdidas prevenidas por sistemas antifraude</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-value">87 — <em>95%</em></div>
+        <div class="metric-label">reducción de fraude con alertas en tiempo real</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-value">48h → <em>10min</em></div>
+        <div class="metric-label">tiempo de detección de eventos sospechosos</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-value">160+<em>h</em></div>
+        <div class="metric-label">trabajo manual eliminado por mes</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-value">180<em>K</em></div>
+        <div class="metric-label">transacciones monitoreadas al mes</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-value">130+<em>q</em></div>
+        <div class="metric-label">queries SQL migradas y optimizadas</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-value">70<em>%+</em></div>
+        <div class="metric-label">mejora en tiempos de respuesta SQL</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-value">10<em>K+</em></div>
+        <div class="metric-label">mensajes/mes clasificados con LLM (85%+ precisión)</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">01 · Perfil</div>
+    <h2 class="section-title">Analista que <em>también construye y despliega.</em></h2>
+
+    <div class="about-grid">
+      <aside class="about-aside">
+        <div class="about-aside-row">
+          <span class="about-aside-label">Rol actual</span>
+          <span class="about-aside-value">Analista de Monitoreo y Fraude</span>
+        </div>
+        <div class="about-aside-row">
+          <span class="about-aside-label">Empresa</span>
+          <span class="about-aside-value">Digital Platforms Colombia S.A.S.</span>
+        </div>
+        <div class="about-aside-row">
+          <span class="about-aside-label">Industria</span>
+          <span class="about-aside-value">Movilidad · Ride-hailing</span>
+        </div>
+        <div class="about-aside-row">
+          <span class="about-aside-label">Antigüedad</span>
+          <span class="about-aside-value">4+ años (Feb 2022 – Presente)</span>
+        </div>
+        <div class="about-aside-row">
+          <span class="about-aside-label">Base</span>
+          <span class="about-aside-value">Bogotá, Colombia</span>
+        </div>
+        <div class="about-aside-row">
+          <span class="about-aside-label">Disponibilidad</span>
+          <span class="about-aside-value">Proyectos · Consultoría</span>
+        </div>
+      </aside>
+
+      <div class="about-body">
+        <p>
+          Trabajo el ciclo completo de un análisis: desde la consulta SQL en bases productivas con
+          <strong>1M+ registros</strong>, hasta el dashboard que las áreas de Gerencia, Finanzas y Operaciones
+          consultan cada mañana. En el medio, scripts en Python que reducen procesos de horas a minutos.
+        </p>
+        <p>
+          Lo que me distingue es la <strong>integración entre disciplinas</strong>. Cuando una alerta de fraude
+          requiere visión por computador para detectar redes de cuentas duplicadas con la misma identidad
+          facial, lo construyo con DeepFace y DBSCAN. Cuando la facturación regulatoria se hace cruzando
+          PDFs con queries a mano, lo automatizo. Cuando hace falta clasificar 10K mensajes/mes con criterio
+          contextual, integro un LLM local con Llama 3.1.
+        </p>
+        <p>
+          Presento <strong>reportes ejecutivos quincenales</strong> al Director Financiero/Administrativo y
+          coordino con Legal, Finanzas, Operaciones y Comercial en casos complejos. He capacitado a 4+
+          analistas y construí los manuales técnicos del equipo. Dirijo en paralelo
+          <strong>D'Recuerdo</strong>, mi emprendimiento de postres artesanales en Bogotá.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section id="stack">
+  <div class="container">
+    <div class="section-label">02 · Stack técnico</div>
+    <h2 class="section-title">Herramientas en uso <em>productivo.</em></h2>
+
+    <div class="stack-grid">
+
+      <div class="stack-cell">
+        <div class="stack-cell-num">2.1</div>
+        <h3 class="stack-cell-title">SQL Avanzado</h3>
+        <ul class="stack-cell-list">
+          <li>ClickHouse (productivo)</li>
+          <li>BigQuery</li>
+          <li>Snowflake</li>
+          <li>130+ queries migradas</li>
+        </ul>
+      </div>
+
+      <div class="stack-cell">
+        <div class="stack-cell-num">2.2</div>
+        <h3 class="stack-cell-title">Python</h3>
+        <ul class="stack-cell-list">
+          <li>pandas · numpy</li>
+          <li>scikit-learn (DBSCAN)</li>
+          <li>Flask + Gunicorn</li>
+          <li>Streamlit · FastAPI</li>
+        </ul>
+      </div>
+
+      <div class="stack-cell">
+        <div class="stack-cell-num">2.3</div>
+        <h3 class="stack-cell-title">Detección de fraude</h3>
+        <ul class="stack-cell-list">
+          <li>Alertas estadísticas</li>
+          <li>DeepFace (reconocimiento facial)</li>
+          <li>DBSCAN (clustering)</li>
+          <li>Cálculo geoespacial (haversine)</li>
+        </ul>
+      </div>
+
+      <div class="stack-cell">
+        <div class="stack-cell-num">2.4</div>
+        <h3 class="stack-cell-title">Business Intelligence</h3>
+        <ul class="stack-cell-list">
+          <li>Power BI</li>
+          <li>Excel Avanzado (1M+ registros)</li>
+          <li>openpyxl (Excel programático)</li>
+          <li>pdfplumber</li>
+        </ul>
+      </div>
+
+      <div class="stack-cell">
+        <div class="stack-cell-num">2.5</div>
+        <h3 class="stack-cell-title">Automatización</h3>
+        <ul class="stack-cell-list">
+          <li>Pipelines ETL</li>
+          <li>APIs REST</li>
+          <li>Git · GitHub</li>
+          <li>Google Cloud Platform</li>
+        </ul>
+      </div>
+
+      <div class="stack-cell">
+        <div class="stack-cell-num">2.6</div>
+        <h3 class="stack-cell-title">IA Generativa</h3>
+        <ul class="stack-cell-list">
+          <li>Llama 3.1 (vía Ollama)</li>
+          <li>Prompt Engineering</li>
+          <li>Clasificación contextual</li>
+          <li>Despliegue local de LLMs</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">03 · Proyectos seleccionados</div>
+    <h2 class="section-title">Casos donde el código <em>generó valor.</em></h2>
+
+    <!-- Project 1 -->
+    <article class="project">
+      <div class="project-num">Caso<span>01</span></div>
+      <div class="project-body">
+        <span class="project-status status-prod">En producción</span>
+        <h3 class="project-title">Sistema antifraude <em>en tiempo real</em></h3>
+        <p class="project-desc">
+          Sistema con alertas estadísticas en tiempo real que monitorea <strong>180K+ transacciones/mes</strong>
+          entre 20K+ usuarios. El tiempo de detección pasó de 48 horas a 10 minutos máximo, mejorando la
+          retención de clientes legítimos en un 15%.
+        </p>
+        <div class="project-impact">
+          <span class="project-impact-label">Impacto</span>
+          <span><strong>$16M COP</strong> en pérdidas prevenidas · reducción de fraude del <strong>87% al 95%</strong></span>
+        </div>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Python · Flask · ClickHouse · alertas estadísticas</span>
+      </aside>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project">
+      <div class="project-num">Caso<span>02</span></div>
+      <div class="project-body">
+        <span class="project-status status-prod">En producción</span>
+        <h3 class="project-title">Detección de redes de fraude por <em>reconocimiento facial</em></h3>
+        <p class="project-desc">
+          Módulo de visión por computador que identifica cuentas duplicadas con la misma identidad facial.
+          Genera embeddings con DeepFace y agrupa relaciones con clustering DBSCAN. Detectó redes de fraude
+          que antes no eran visibles para el equipo de operaciones.
+        </p>
+        <div class="project-impact">
+          <span class="project-impact-label">Impacto</span>
+          <span><strong>89% de precisión</strong> · $2M+ COP en hurtos de paquetería prevenidos · estafas a pilotos del 90% al 15%</span>
+        </div>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Python · DeepFace · DBSCAN · ClickHouse · openpyxl</span>
+      </aside>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project">
+      <div class="project-num">Caso<span>03</span></div>
+      <div class="project-body">
+        <span class="project-status status-prod">En producción</span>
+        <h3 class="project-title">Portal web interno <em>multi-dashboard</em></h3>
+        <p class="project-desc">
+          Aplicación web desplegada en Render con backend Flask + Gunicorn. Integra dashboards de alertas,
+          auditoría comercial, evasión de comisiones y reconocimiento facial. Resolví la persistencia de
+          sesión sobre el free tier con tokens HMAC firmados sin estado del lado del servidor.
+        </p>
+        <div class="project-impact">
+          <span class="project-impact-label">Impacto</span>
+          <span>Usado diariamente por <strong>6 áreas</strong>: Gerencia, Finanzas, Operaciones, Comercial, Atención al Cliente y Tecnología.</span>
+        </div>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Flask · Gunicorn · HTML/JS · Render · HMAC stateless · RBAC</span>
+      </aside>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="project">
+      <div class="project-num">Caso<span>04</span></div>
+      <div class="project-body">
+        <span class="project-status status-prod">En producción</span>
+        <h3 class="project-title">Clasificación automatizada de mensajes con <em>LLM local</em></h3>
+        <p class="project-desc">
+          Pipeline que procesa mensajes de la plataforma (rider-driver) clasificando solicitaciones
+          inapropiadas y lenguaje abusivo. Llama 3.1 ejecutándose localmente vía Ollama, sin enviar datos
+          sensibles a APIs externas. Sistema en producción que opera sin intervención humana.
+        </p>
+        <div class="project-impact">
+          <span class="project-impact-label">Impacto</span>
+          <span><strong>10K+ mensajes/mes</strong> con <strong>85%+ precisión</strong> · cero costo de API por inferencia.</span>
+        </div>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Python · Llama 3.1 · Ollama · Streamlit · Prompt Engineering</span>
+      </aside>
+    </article>
+
+    <!-- Project 5 -->
+    <article class="project">
+      <div class="project-num">Caso<span>05</span></div>
+      <div class="project-body">
+        <span class="project-status status-prod">En producción</span>
+        <h3 class="project-title">Pagos_Automaticos · clasificador <em>fraude vs mala práctica</em></h3>
+        <p class="project-desc">
+          Sistema que distingue entre fraude (el conductor nunca llegó al pasajero) y mala práctica
+          (servicio prestado pero pago falló). Cálculo de distancia haversine entre coordenadas GPS de
+          inicio y fin del viaje, contra umbrales de radio configurados por país.
+        </p>
+        <div class="project-impact">
+          <span class="project-impact-label">Impacto</span>
+          <span>Reducción significativa del tiempo manual de revisión del equipo de soporte.</span>
+        </div>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Python · ClickHouse · clickhouse-connect · cálculo geoespacial</span>
+      </aside>
+    </article>
+
+    <!-- Project 6 -->
+    <article class="project">
+      <div class="project-num">Caso<span>06</span></div>
+      <div class="project-body">
+        <span class="project-status status-prod">En producción</span>
+        <h3 class="project-title">Automatización de facturación <em>MinTIC</em></h3>
+        <p class="project-desc">
+          Reporte trimestral regulatorio que requería extraer números de factura desde múltiples PDFs y
+          cruzarlos con datos transaccionales de ClickHouse. Antes: varias horas de trabajo manual.
+          Después: ejecución en menos de 3 minutos.
+        </p>
+        <div class="project-impact">
+          <span class="project-impact-label">Impacto</span>
+          <span>De varias horas a <strong>menos de 3 minutos</strong>. Eliminación de errores de transcripción.</span>
+        </div>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Python · pdfplumber · ClickHouse · openpyxl</span>
+      </aside>
+    </article>
+
+    <!-- Project 7 -->
+    <article class="project">
+      <div class="project-num">Caso<span>07</span></div>
+      <div class="project-body">
+        <span class="project-status status-public">Público</span>
+        <h3 class="project-title">Voice-agent · <em>asistente de voz</em> con IA</h3>
+        <p class="project-desc">
+          Asistente de voz para automatización de tareas mediante comandos en español. Aplicado al flujo
+          de activación de pilotos para reducir dependencia del equipo humano en pasos repetitivos del
+          onboarding.
+        </p>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Python · speech recognition · LLMs locales</span>
+      </aside>
+    </article>
+
+    <!-- Project 8 -->
+    <article class="project">
+      <div class="project-num">Caso<span>08</span></div>
+      <div class="project-body">
+        <span class="project-status status-public">Público · Open source</span>
+        <h3 class="project-title">Bot de <em>entrenamiento personal</em> con IA</h3>
+        <p class="project-desc">
+          Agente de entrenamiento personal accesible vía Telegram, gratuito, integrado con LLM local
+          ejecutándose en Ollama. Prueba de concepto de IA accesible sin costos de API recurrentes.
+        </p>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Python · Ollama · Telegram Bot API</span>
+      </aside>
+    </article>
+
+    <!-- Project 9 -->
+    <article class="project">
+      <div class="project-num">Caso<span>09</span></div>
+      <div class="project-body">
+        <span class="project-status status-public">Público · Personal</span>
+        <h3 class="project-title">D'Recuerdo · <em>catálogo y admin</em> de postres</h3>
+        <p class="project-desc">
+          Plataforma full-stack para mi negocio de postres artesanales en Bogotá. Catálogo público con
+          productos para clientes y panel de administración para gestionar inventario, pedidos y contenido.
+        </p>
+        <div class="project-impact">
+          <span class="project-impact-label">Impacto</span>
+          <span>Operación digital del negocio sin depender de plantillas genéricas o servicios pagos.</span>
+        </div>
+      </div>
+      <aside class="project-tech">
+        <span class="project-tech-label">Stack</span>
+        <span class="project-tech-value">Python · Streamlit · SQLite</span>
+      </aside>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ CODE SAMPLES ============ -->
+<section id="code">
+  <div class="container">
+    <div class="section-label">04 · Código representativo</div>
+    <h2 class="section-title">Patrones reales <em>de mi día a día.</em></h2>
+
+    <div class="samples-grid">
+      <div>
+        <div class="sample-caption">Snippet 01 — Python · Detección geoespacial</div>
+        <h3 class="sample-title">Haversine para fraude de pagos</h3>
+        <p class="sample-blurb">
+          Si la distancia entre punto de inicio y fin del viaje supera el umbral del país,
+          se marca como <em>fraude</em>; si está dentro, es <em>mala práctica</em>.
+        </p>
+<div class="code-block" data-lang="Python">
+<span class="code-keyword">from</span> math <span class="code-keyword">import</span> radians, sin, cos, asin, sqrt
+
+<span class="code-keyword">def</span> <span class="code-fn">haversine_km</span>(lat1, lon1, lat2, lon2):
+    R = <span class="code-string">6371.0</span>  <span class="code-comment"># radio terrestre en km</span>
+    dlat = radians(lat2 - lat1)
+    dlon = radians(lon2 - lon1)
+    a = sin(dlat/<span class="code-string">2</span>)**<span class="code-string">2</span> + cos(radians(lat1)) \
+        * cos(radians(lat2)) * sin(dlon/<span class="code-string">2</span>)**<span class="code-string">2</span>
+    <span class="code-keyword">return</span> <span class="code-string">2</span> * R * asin(sqrt(a))
+
+<span class="code-keyword">def</span> <span class="code-fn">clasificar</span>(viaje, radio_km):
+    d = haversine_km(viaje.lat_ini, viaje.lon_ini,
+                     viaje.lat_fin, viaje.lon_fin)
+    <span class="code-keyword">return</span> <span class="code-string">"fraude"</span> <span class="code-keyword">if</span> d &gt; radio_km <span class="code-keyword">else</span> <span class="code-string">"mala_practica"</span>
+</div>
+      </div>
+
+      <div>
+        <div class="sample-caption">Snippet 02 — SQL · ClickHouse</div>
+        <h3 class="sample-title">Deduplicación sin DISTINCT ON</h3>
+        <p class="sample-blurb">
+          ClickHouse no soporta <code>DISTINCT ON</code> al estilo Postgres. Patrón equivalente con
+          <code>GROUP BY</code> + <code>argMax()</code> para tomar el registro más reciente por usuario.
+        </p>
+<div class="code-block" data-lang="SQL">
+<span class="code-comment">-- último estado conocido por pasajero</span>
+<span class="code-keyword">SELECT</span>
+    passenger_id,
+    <span class="code-fn">argMax</span>(status, updated_at)    <span class="code-keyword">AS</span> last_status,
+    <span class="code-fn">max</span>(updated_at)               <span class="code-keyword">AS</span> last_seen,
+    <span class="code-fn">count</span>()                       <span class="code-keyword">AS</span> events
+<span class="code-keyword">FROM</span> picapmongoprod.passenger_events
+<span class="code-keyword">WHERE</span> updated_at &gt;= now() - <span class="code-keyword">INTERVAL</span> <span class="code-string">90</span> <span class="code-keyword">DAY</span>
+<span class="code-keyword">GROUP BY</span> passenger_id
+<span class="code-keyword">HAVING</span> events &gt;= <span class="code-string">3</span>
+<span class="code-keyword">ORDER BY</span> last_seen <span class="code-keyword">DESC</span>;
+</div>
+      </div>
+
+      <div>
+        <div class="sample-caption">Snippet 03 — Python · Excel programático</div>
+        <h3 class="sample-title">Reporte de alertas con openpyxl</h3>
+        <p class="sample-blurb">
+          Salida estructurada con formato condicional por severidad. El equipo de fraude lee niveles
+          de un vistazo, sin macros ni pasos manuales.
+        </p>
+<div class="code-block" data-lang="Python">
+<span class="code-keyword">from</span> openpyxl <span class="code-keyword">import</span> Workbook
+<span class="code-keyword">from</span> openpyxl.styles <span class="code-keyword">import</span> PatternFill
+
+wb = Workbook()
+ws = wb.active
+ws.title = <span class="code-string">"Alertas"</span>
+ws.append([<span class="code-string">"piloto_id"</span>, <span class="code-string">"score"</span>, <span class="code-string">"severidad"</span>])
+
+<span class="code-keyword">for</span> a <span class="code-keyword">in</span> alertas:
+    fill = PatternFill(<span class="code-string">"solid"</span>, fgColor=
+        <span class="code-string">"C0392B"</span> <span class="code-keyword">if</span> a.score &gt;= <span class="code-string">0.85</span> <span class="code-keyword">else</span>
+        <span class="code-string">"E67E22"</span> <span class="code-keyword">if</span> a.score &gt;= <span class="code-string">0.65</span> <span class="code-keyword">else</span>
+        <span class="code-string">"F1C40F"</span>)
+    row = ws.max_row + <span class="code-string">1</span>
+    ws.append([a.piloto_id, a.score, a.severidad])
+    <span class="code-keyword">for</span> col <span class="code-keyword">in</span> <span class="code-string">"ABC"</span>:
+        ws[<span class="code-string">f"</span>{col}{row}<span class="code-string">"</span>].fill = fill
+
+wb.save(<span class="code-string">"alertas_fraude.xlsx"</span>)
+</div>
+      </div>
+
+      <div>
+        <div class="sample-caption">Snippet 04 — Python · LLM local</div>
+        <h3 class="sample-title">Clasificación de mensajes con Llama 3.1</h3>
+        <p class="sample-blurb">
+          Llamada a Ollama corriendo local. Sin costos de API, sin enviar datos sensibles
+          a terceros. Procesa <strong>10K+ mensajes/mes</strong>.
+        </p>
+<div class="code-block" data-lang="Python">
+<span class="code-keyword">import</span> requests, json
+
+PROMPT = <span class="code-string">"""Clasifica el siguiente mensaje como:
+- 'abusivo'  : lenguaje agresivo o insultante
+- 'inapropiado' : solicitación sexual/comercial
+- 'normal'   : conversación regular
+Responde solo con la etiqueta.
+Mensaje: {texto}"""</span>
+
+<span class="code-keyword">def</span> <span class="code-fn">clasificar</span>(texto: str) -&gt; str:
+    r = requests.post(
+        <span class="code-string">"http://localhost:11434/api/generate"</span>,
+        json={
+            <span class="code-string">"model"</span>: <span class="code-string">"llama3.1"</span>,
+            <span class="code-string">"prompt"</span>: PROMPT.format(texto=texto),
+            <span class="code-string">"stream"</span>: <span class="code-keyword">False</span>,
+        },
+        timeout=<span class="code-string">30</span>,
+    )
+    <span class="code-keyword">return</span> r.json()[<span class="code-string">"response"</span>].strip().lower()
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section id="contact" class="cta">
+  <div class="container">
+    <div class="section-label">05 · Contacto</div>
+    <h2>
+      ¿Hablamos sobre <em>detección<br>de fraude</em> o automatización?
+    </h2>
+    <p style="font-size:18px; color:var(--ink-soft); max-width:680px; line-height:1.6;">
+      Disponible para proyectos de prevención de pérdidas, BI, automatización de procesos y
+      construcción de portales internos. Respondo en menos de 24 horas.
+    </p>
+    <div class="cta-links">
+      <a class="cta-link" href="mailto:duvanesneider11@gmail.com">
+        Escribir correo <span class="cta-link-arrow">→</span>
+      </a>
+      <a class="cta-link outline" href="https://www.linkedin.com/in/duvan-sneyder-perilla-gutierrez-11113b1a1/" target="_blank" rel="noopener">
+        LinkedIn <span class="cta-link-arrow">→</span>
+      </a>
+      <a class="cta-link outline" href="https://github.com/DuvanP11" target="_blank" rel="noopener">
+        GitHub <span class="cta-link-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 · Duvan S. Perilla G.</span>
+    <span>Bogotá · Colombia</span>
+  </div>
+</footer>
+
+</body>
+</html>
